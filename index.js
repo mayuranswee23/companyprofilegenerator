@@ -47,7 +47,7 @@ const managerPrompts = () =>{
      .then(response => {
          const manager = new Manager(response.name, response.id, response.email, response.officeNumber);
          team.push(manager); 
-         
+         employeePrompts()
      })
 }
 

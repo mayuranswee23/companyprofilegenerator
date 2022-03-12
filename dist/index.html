@@ -1,6 +1,4 @@
-const generateHTML = (teamMembersArr) => {
 
-    return `
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -13,12 +11,16 @@ const generateHTML = (teamMembersArr) => {
     </head>
     <body>
         <h1 class ="title">Team Profile Generator </h1>
-        ${teamMembersArr.map(employee => {
-            return employee.getHTML();
-        })}
+        
+    <div class="card" style="width: 18rem;">
+    <div class="card-body">
+    <h5 class="card-title">Manager</h5>
+    <h6 class="card-subtitle mb-2 text-muted">ID: asd</h6>
+    <p class="card-text">asd</p>
+    <p class="card-text">Office Number: asd</p>
+    <a href="mailto:asd" class="card-link">Email link</a>
+    </div>
+    </div>
     </body>
     </html>
-    `;
-    }
     
-    module.exports = generateHTML
